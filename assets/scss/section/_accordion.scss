@@ -1,0 +1,63 @@
+/* Vertical Accordion Style */
+.va-container{
+	position:relative;
+	margin:0 auto 0 auto;
+}
+.va-wrapper{
+	width:100%;
+	height:100%;
+	position:relative;
+	overflow:hidden;
+	background-color: $background-color-accordion;
+}
+.va-slice{
+	cursor:pointer;
+	position:absolute;
+	width:100%;
+	left:0px;
+	overflow:hidden;
+	background-color: $background-color-accordion;
+}
+
+.slice-wrapper {
+	background-color: $background-color-accordion;
+	height: 100%;
+}
+
+.va-slice-1{
+	background : url(../img/weare.png) center center;
+	// background-size: 100% 100%;	
+}
+
+.va-slice-2{
+	background : url(../img/wedo.png) center center;
+	// background-size: 100% 100%;	
+}
+.va-slice-3{
+	background : url(../img/escape.png) center center;
+	// background-size: 100% 100%;
+	background-repeat: none;
+}
+
+.va-title {
+	text-align: center;
+	font: {
+		size: $accordion-title-size;
+		family: $header-main-title-family;
+	}
+	color: $accordion-title-color;
+}
+.va-content{
+	display:none;
+	margin: 0 auto 0 auto;
+	p {
+		font: {
+			family: $header-main-title-family;
+			size: $accordion-description-size;
+			weight: 200;
+		}
+		color: $accordion-title-color;
+
+	}
+}
+

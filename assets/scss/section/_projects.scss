@@ -1,0 +1,76 @@
+.project-column {
+	padding: 0;
+}
+
+.project {
+	height: 440px;
+	padding: 0;
+	position: relative;
+	.project-wrapper {
+		@include bg-wrapper;
+	}
+
+	&:hover .project-wrapper {
+			background-color: transparent;
+	}
+
+	.project-title {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		font: {
+			family: $header-main-title-family;
+			size: $projects-title-size;
+			weight: 500;
+		}
+		color: $projects-title-color;
+		text-decoration: none;
+		.spacing {
+			@include letter-spacing(10px);
+		}
+		.subtitle {
+			font: {
+				size: 30px;
+				weight: normal;
+			}
+		}
+	}
+}
+
+#project1 {
+	background : url(../img/discolusre.png) 0 0;	
+	background-position: 0 -96px;
+}
+
+#project2 {
+	background : url(../img/jamm.png) 0 0;
+	background-position: 50%;
+}
+
+#project3 {
+	background : url(../img/termo.png) 0 0;
+	background-position: -50px -96px;
+}
+
+#project4 {
+	background : url(../img/chip.png) 0 0;
+	background-position: -20px -20px;
+}
+
+#project5 {
+	height: 880px;
+	background : url(../img/escape.png) 0 0;
+	background-position: -20px -20px;
+}
+
+#project6 {
+	background : url(../img/genetics.png) 0 0;
+	background-position: 0px -92px;
+}
+
+#project7 {
+	background : url(../img/primo.png) 0 0;
+	background-position: 0px -92px;
+}

@@ -1,0 +1,169 @@
+.row {
+    max-width: 100% !important;
+}
+
+.header-layer {
+    background: url(../img/layer-header.png) 0 0;
+    background-size: cover;
+    padding: 0px;
+    height: auto;
+}
+
+.hover-layer {
+    height: 100%;
+    background-color: $background-color-opacity;
+    padding: 0px;
+}
+
+.menu-desktop {
+    padding-top: 30px;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding-left: 80px;
+
+    li {
+        margin: 0 20px 0 20px;
+        display: inline-block;
+
+        .menu-item {
+            font: {
+                family: $menu-font-family;
+                size: $menu-write-size;
+            };
+            padding-bottom: 5px !important;
+            color: $pink-write-color !important;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                border-bottom: 2px solid $white;
+            }
+        }
+    }
+}
+
+.menu-list-mobile {
+    list-style-type: none;
+
+    li {
+        display: block;
+        padding: 10px;
+
+        .menu-item-mobile {
+            font: {
+                family: $menu-font-family;
+                size: $menu-write-size;
+            };
+            padding-bottom: 5px !important;
+            color: $pink-write-color !important;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                border-bottom: 2px solid $white;
+            }
+        }
+    }
+}
+
+.subscribe {
+    display: inline-block;
+    text-decoration: none;
+    background-color: $subscribe-bg-color;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px/24px;
+    position: relative;
+
+    span {
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $pink-write-color;
+    }
+    &:hover {
+    	background-color: #cc1937;
+    }
+}
+
+.search {
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-left: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px/24px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid $pink-write-color;
+    &:focus {
+        background-color: transparent;
+        color: $pink-write-color;
+    }
+}
+
+.header-logo {
+    margin-top: 155px;
+    background: url(../img/logo-freshbyte.png) 0 0;
+    background-size: 100% 100%;
+    height: 40px;
+}
+
+.header-title {
+    margin-top: 40px;
+    text-align: center;
+    font-family: $header-main-title-family;
+
+    .main-title {
+        font: {
+            size: $header-main-title;
+            weight: bold;
+        };
+        color: $header-main-title-color;
+
+        span {
+            color: #e28133;
+        }
+    }
+
+    .subtitle {
+        margin-top: 40px;
+        color: $pink-write-color;
+        font-size: 24px;
+    }
+}
+
+.find-more {
+    margin: 80px 0px 150px 55px;
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    border-radius: 30px/24px;
+    background-color: $find-more-color;
+    position: relative;
+
+    span {
+        padding-left: 18px;
+        font-size: 14px;
+        display: inline-block;
+        color: $white;
+    }
+
+    &:hover {
+    	background-color: #ac2090;
+    }
+}
+
+.tabs-panel {
+    .tabs-panel-picture {
+
+    }
+
+    .tabs-panel-wrapper {
+
+    }
+
+}

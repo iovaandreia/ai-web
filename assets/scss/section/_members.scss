@@ -1,0 +1,151 @@
+
+.tabs {
+	border: 0;
+}
+
+.tabs-title {
+	height: 650px;
+	padding: 0;
+	position: relative;
+
+	a[aria-selected='true'] {
+		padding: 0;
+		background-color: transparent;
+		.picture-wrapper {
+			background-color: none !important;
+		}
+		.follow {
+			display: none;
+		}
+
+		.arrow {
+			position: absolute;
+			bottom: 20px;
+			right: 10px;
+			width: 20px;
+			height: 20px;
+			background : url(../img/arrow-down.png) 0 0;
+			background-size: 100% 100%;
+		}
+	}
+	a[aria-selected='false'] {
+		padding: 0;
+		background-color: transparent;
+		.picture-wrapper {
+			@include bg-wrapper;
+		}
+		.follow {
+			display: block;
+		}
+		
+	}
+	.about {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 60px 0 60px 20px;
+		@include linear-gradient(to top, rgba($black,0.6), rgba($black,0) );
+	}
+
+	.name {
+		font: {
+			family: $header-main-title-family;
+			size: 30px;
+			weight: bold;
+		}
+		margin: 0;
+		color: $white;
+	}
+
+	.position {
+		margin: 0;
+		font: {
+			family: $header-main-title-family;
+			size: 24px;
+			weight: normal;
+		}
+		color: $white;
+	}
+
+	.follow {
+		cursor: pointer;
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		width: 100px;
+    	height: 30px;
+    	text-decoration: none;
+    	border-radius: 30px/24px;
+    	background-color: $follow-bg-color;
+    	text-align: center;
+	    span {
+	    	padding-top: 8px;
+	        font-size: 14px;
+	        display: inline-block;
+	        color: $white;
+	    }
+	    &:hover {
+	    	background-color: #59951d;
+	    }
+	}
+}
+
+.tabs-title-image {
+	height: 650px;
+	width: 100%;
+	
+}
+
+#tabs-image1 {
+	background : url(../img/kawashima.png) center center;
+	background-size: cover;
+	
+}
+#tabs-image2 {
+	background : url(../img/lebron.png) center center;
+	background-size: cover;
+	
+}
+#tabs-image3 {
+	background : url(../img/nazir.png) center center;
+	background-size: cover;
+	
+}
+#tabs-image4 {
+	background : url(../img/white.png) center center;
+	background-size: cover;
+	
+}
+
+.tabs-content {
+	border: 0;
+}
+
+.tabs-panel {
+	padding: 0;
+    .tabs-panel-picture {
+    	width: 100%;
+    	height: auto;
+    	background-size: cover;
+    	background-repeat: none;
+    }
+
+    .tabs-panel-wrapper {
+        @include bg-wrapper;
+        width: 100%;
+    	height: auto;
+    }
+
+    p {
+    	margin-bottom: 0;
+    	padding: 120px 0 120px 0;
+    	font: {
+    		family: $header-main-title-family;
+    		size: 30px;
+    	}
+    	color: $accordion-title-color;
+    }
+
+}
+

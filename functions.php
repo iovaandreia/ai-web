@@ -450,3 +450,26 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 }
 
 ?>
+
+
+<?php   // Add style from public folder 
+function public_style() {
+    wp_enqueue_style( 'my_style', get_template_directory_uri() . '/public/css/app.css' );
+}
+    add_action( 'wp_enqueue_scripts', 'public_style' );
+ 
+?>
+
+
+<?php // Add scripts from public folder
+function public_script() {
+    wp_register_script('my_script', get_template_directory_uri() . '/public/js/app-debug.js');
+    wp_enqueue_script('my_script');
+}
+    add_action( 'wp_enqueue_scripts', 'public_script' ); 
+?>
+
+
+
+
+
