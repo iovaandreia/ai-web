@@ -29,3 +29,25 @@ Finally, run `npm start` to run the Sass compiler. It will re-run every time you
 # Grunt tasks integrated
 
 To run gulp tasks run `gulp` or you can run separately.
+
+# Installation ai-wep application
+
+```bash
+cd ai-app
+npm install
+bower install
+
+cd ai-server
+npm install
+bower install
+```
+
+# Run application
+
+```bash
+cd ai-app
+gulp serve
+
+cd ai-server
+npm run dev
+```
